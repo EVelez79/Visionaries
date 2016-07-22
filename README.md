@@ -1,5 +1,6 @@
 # Visionaries
 Our name is Visionaries
-
 Developers:
-- Magali 
+- Erick
+- Magali
+- Paulina
