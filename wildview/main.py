@@ -45,7 +45,7 @@ class SubResultsHandler(webapp2.RequestHandler):
 
 class AboutHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template(' ')
+        template = jinja_environment.get_template('about.html')
         self.response.out.write(template.render())
 
 class SearchHandler(webapp2.RequestHandler):
@@ -67,7 +67,7 @@ class UpdatesHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/about', AboutHandler),
-    ('/search', SearchHabdler),
+    ('/search', SearchHandler),
     ('/contact', ContactHandler),
     ('/updates', UpdatesHandler)
 ], debug=True)
