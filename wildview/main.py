@@ -23,11 +23,24 @@ jinja_environment = jinja2.Environment(
     loader = jinja2.FileSystemLoader(template_dir))
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
 
+
+class MainHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('home.html')
+        self.response.out.write(template.render())
+
+class AboutHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('about.html')
+        self.response.out.write(template.render())
+
 class SearchHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('search.html')
         self.response.out.write(template.render())
 
 app = webapp2.WSGIApplication([
-    ('/', SearchHandler)
+    ('/', MainHandler),
+    ('/about', AboutHandler),
+    ('/search', SearchHandler),
 ], debug=True)
