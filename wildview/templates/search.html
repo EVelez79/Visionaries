@@ -2,21 +2,23 @@
 <html>
   <head>
 
-    <title>Geolocation</title>
+    <title>Search</title>
 
     <!-- References to the CSS and JS static files -->
     <link rel="stylesheet" type="text/css "href="static/searchStyle.css">
     <script src="static/searchScript.js"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCox6FVrjOmNWgopbydRHoRTtCG_UbP-Ho&libraries=places">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCox6FVrjOmNWgopbydRHoRTtCG_UbP-Ho&libraries=places&visualization">
     </script>
     <script>
     function setup() {
       initMap();
       initAutocomplete();
+      initialize();
+
     }
-    
+
     $( document ).ready( setup );
 
 </script
