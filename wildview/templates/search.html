@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Geolocation</title>
+
+    <!-- References to the CSS and JS static files -->
+    <link rel="stylesheet" type="text/css "href="static/searchStyle.css">
+    <script src="static/searchScript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCox6FVrjOmNWgopbydRHoRTtCG_UbP-Ho&libraries=places">
+    </script>
+    <script>
+    function setup() {
+      initMap();
+      initAutocomplete();
+    }
+    
+    $( document ).ready( setup );
+
+</script
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
+  </body>
+</html>
