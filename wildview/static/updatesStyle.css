@@ -1,0 +1,54 @@
+html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
+
+
+     /*Me trying to make a navigation bar */
+
+
+       ul#NavigationBar {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: black;
+
+
+       }
+
+       li {
+           float: right;
+
+       }
+
+       li a {
+           display: block;
+           color: white;
+           font-family: "Amatic SC", cursive;
+           font-size: 25px;
+           opacity: .4;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: underline;
+           text-decoration: none;
+     }
+
+
+       /* Make the link have a bottom border when hover */
+       li a:hover {
+
+           border-bottom: solid 1px rgba(255,255,255,.2);
+           color: #fff;
+           opacity: 1;
+           -webkit-transition: border-color 800ms ease-in-out;
+           -moz-transition: border-color 800ms ease-in-out;
+           -ms-transition: border-color 800ms ease-in-out;
+           -o-transition: border-color 800ms ease-in-out;
+           transition: border-color 800ms ease-in-out;
+
+       }
+
+
+/* End of navigation pane */
