@@ -1,8 +1,62 @@
-<style id="slide-styles" type="text/css">
-
+/* This is the styling for the About page */
 
 /*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
 /* CSS CLASSES FOR FORMATTING (start with a period) */
+<style>
+
+/*Me trying to make a navigation bar */
+
+
+  ul#NavigationBar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      opacity: .4;
+
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      font-family: "Amatic SC", cursive;
+      font-size: 30px;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: underline;
+      text-decoration: none;
+}
+
+
+  /* Make the link have a bottom border when hover */
+  li a:hover {
+      border-bottom: solid 1px rgba(255,255,255,.2);
+      -webkit-transition: border-color 800ms ease-in-out;
+      -moz-transition: border-color 800ms ease-in-out;
+      -ms-transition: border-color 800ms ease-in-out;
+      -o-transition: border-color 800ms ease-in-out;
+      transition: border-color 800ms ease-in-out;
+
+  }
+
+  body {
+
+    background-color: black;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+}
+
+
+h1{
+font-family: "Amatic SC", cursive;
+font-size: 60px;
+color: white;
+}
 
 
 </style>
