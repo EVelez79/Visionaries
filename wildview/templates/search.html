@@ -9,6 +9,9 @@
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <script src="static/searchScript.js"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://www.inaturalist.org/observations.widget"></script>
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCox6FVrjOmNWgopbydRHoRTtCG_UbP-Ho&libraries=places&visualization">
     </script>
@@ -16,9 +19,21 @@
     function setup() {
       initMap();
       initAutocomplete();
-      initialize();
     }
     $( document ).ready( setup );
+
+    $.ajax({
+        url: "https://www.inaturalist.org/observations.json",
+        type: "GET",
+        dataType: 'json',
+        cache: true,
+        success: function (data, status, error) {
+          console.log('success', data);
+        },
+        error: function (data, status, error) {
+          console.log('error', data, status, error);
+        }
+    });
 </script>
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">

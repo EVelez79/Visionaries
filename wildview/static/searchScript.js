@@ -1,10 +1,5 @@
 // This is the function for geolocation (automatically taking user location)
 
-function eqfeed_callback(results) {
-  map.data.addGeoJson(results);
-}
-
-
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -34.397, lng: 150.644},
@@ -108,25 +103,3 @@ function initAutocomplete() {
     map.fitBounds(bounds);
   });
 }
-
-function initialize() {
-
-    // Create a <script> tag and set the USGS URL as the source.
-    var script = document.createElement('script');
-
-    script.src = 'https://data.kingcounty.gov/api/views/pyt5-me2k/rows.json?accessType=DOWNLOAD';
-    document.getElementsByTagName('head')[0].appendChild(script);
-}
-
-      // Loop through the results array and place a marker for each
-      // set of coordinates.
-      window.eqfeed_callback = function(results) {
-        for (var i = 0; i < results.features.length; i++) {
-          var coords = results.features[i].geometry.coordinates;
-          var latLng = new google.maps.LatLng(coords[1],coords[0]);
-          var marker = new google.maps.Marker({
-            position: latLng,
-            map: map
-          });
-        }
-      }
