@@ -2,7 +2,6 @@
 
 /*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
 /* CSS CLASSES FOR FORMATTING (start with a period) */
-<style>
 
 /*Me trying to make a navigation bar */
 
@@ -12,9 +11,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #333;
-      opacity: .4;
-
+      background-color: black;
   }
 
   li {
@@ -26,11 +23,23 @@
       color: white;
       font-family: "Amatic SC", cursive;
       font-size: 25px;
-      opacity: .4;
+      opacity: .7;
       text-align: center;
       padding: 14px 16px;
       text-decoration: underline;
       text-decoration: none;
+}
+
+li a #WildViewlogo.jpg {
+    display: block;
+    color: white;
+    font-family: "Amatic SC", cursive;
+    font-size: 25px;
+    opacity: 1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -46,6 +55,7 @@
       transition: border-color 800ms ease-in-out;
 
   }
+  /* End of navigation pane */
 
   body {
 
@@ -61,6 +71,33 @@
      color: white;
      }
 
+     img#teampicture {
+       float: left;
+       padding: 25px;
+       width: 40%;
+       height: 300px;
+     }
 
 
-</style>
+/*     img#pawprints {
+       float: left;
+       padding: 25px;
+       width: 50px;
+       height: 50px;
+     }
+*/
+
+
+     div#AboutTextBox {
+       font-family: "Poiret One";
+       color: white;
+       letter-spacing:1px;
+       font-size: 15px;
+       float: right;
+       width: 40%;
+       border: 1px solid rgb(255, 255, 255);
+       border: 1px solid rgba(255, 255, 255, .5);
+       -webkit-background-clip: padding-box; /* for Safari */
+       background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */       padding: 25px;
+       margin: 25px;
+     }
