@@ -3,8 +3,8 @@ html, body {
        margin: 0;
        padding: 0;
      }
-     div#map {
-       height: 90%;
+     #map {
+       height: 100%;
        bottom: 0%;
        width: 50%;
        float: right;
