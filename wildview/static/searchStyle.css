@@ -3,9 +3,18 @@ html, body {
        margin: 0;
        padding: 0;
      }
-     #map {
+     div#map {
        height: 90%;
        bottom: 0%;
+       width: 50%;
+       float: right;
+     }
+
+     div#inaturalistresults {
+       height: 90%;
+       bottom: 0%;
+       width: 50%;
+       float: left;
      }
      .controls {
        margin-top: 10px;
