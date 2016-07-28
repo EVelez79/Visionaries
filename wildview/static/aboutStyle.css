@@ -6,13 +6,13 @@
 /*Me trying to make a navigation bar */
 
 
-  ul#NavigationBar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: black;
-  }
+ul#NavigationBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
 
   li {
       float: right;
@@ -59,23 +59,28 @@ li a #WildViewlogo.jpg {
 
   body {
 
-    background-color: black;
+    background-color: white;
     background-size: 100% 100%;
     background-attachment:fixed;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 
      h1{
      font-family: "Amatic SC", cursive;
      font-size: 60px;
-     color: white;
+     color: black;
      }
 
      img#teampicture {
-       float: left;
-       padding: 25px;
-       width: 40%;
-       height: 400px;
+       padding-top: 0px;
+       padding-left: 15px;
+       padding-right: 15px;
+       width: 35%;
+       height: 35%;
      }
 
 
@@ -90,11 +95,12 @@ li a #WildViewlogo.jpg {
 
      div#AboutTextBox {
        font-family: "Poiret One";
-       color: white;
+       color: black;
        letter-spacing:1px;
        font-size: 15px;
        float: right;
-       width: 40%;
+       padding-left: 10%;
+       width: 60%;
        border: 1px solid rgb(255, 255, 255);
        border: 1px solid rgba(255, 255, 255, .5);
        -webkit-background-clip: padding-box; /* for Safari */

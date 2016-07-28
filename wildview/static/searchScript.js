@@ -6,6 +6,11 @@ function initMap() {
       zoom: 6
       });
 
+      // This event listener will call addMarker() when the map is clicked.
+      map.addListener('click', function(event) {
+        addMarker(event.latLng);
+      });
+
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         // Try HTML5 geolocation.
@@ -29,6 +34,16 @@ function initMap() {
           handleLocationError(false, infoWindow, map.getCenter());
         }
       }
+
+      // Adds a marker to the map and push to the array.
+      function addMarker(location) {
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+        markers.push(marker);
+      }
+
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
@@ -102,4 +117,5 @@ function initAutocomplete() {
     });
     map.fitBounds(bounds);
   });
+
 }

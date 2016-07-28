@@ -1,20 +1,27 @@
 html, body {
+        overflow: hidden;
        height: 100%;
        margin: 0;
        padding: 0;
      }
+<<<<<<< HEAD
      #map {
+=======
+     div#map {
+>>>>>>> 2c5be1d35ca6f9c529cf0709439849cf9d2ad3c8
        height: 100%;
        bottom: 0%;
-       width: 50%;
+       width: 60%;
        float: right;
      }
 
      div#inaturalistresults {
-       height: 90%;
+       height: 85%;
+       overflow: scroll;
        bottom: 0%;
-       width: 50%;
+       width: 40%;
        float: left;
+       font-family: "Poiret One";
      }
      .controls {
        margin-top: 10px;
