@@ -50,8 +50,33 @@ html, body {
 
        }
 
-
 /* End of navigation pane */
+
+h1{
+font-family: "Amatic SC", cursive;
+font-size: 70px;
+color: black;
+float: right;
+padding-right: 30%;
+padding-top: 9%;
+}
+
+#email {
+font-family: "Amatic SC", cursive;
+font-size: 45px;
+float: right;
+padding-right: 42%;
+padding-top: 0%;
+}
+
+#email a:link {
+  color: black;
+}
+
+#email a:hover {
+  color: white;
+}
+
 
 /*
 Title: Creating an HTML5 enhanced responsive-ready contact form, with custom javascript feature detection
@@ -59,7 +84,7 @@ Tutorial on: http://www.onextrapixel.com
 Author: http://www.toddmotto.com
 */
 
-* {
+/** {
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -70,11 +95,6 @@ Author: http://www.toddmotto.com
 	-o-font-smoothing:antialiased;
 	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
-}
-
-a, a:visited {
-	color:#fff;
-	text-decoration:none;
 }
 
 body {
@@ -196,4 +216,4 @@ body {
 }
 :-ms-input-placeholder {
     color:#888;
-}
+}*/
