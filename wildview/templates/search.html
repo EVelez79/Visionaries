@@ -2,33 +2,70 @@
 <html>
   <head>
 
-    <title>Search</title>
+    <title>Search-WildView</title>
 
     <!-- References to the CSS and JS static files -->
     <link rel="stylesheet" type="text/css "href="static/searchStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <script src="static/searchScript.js"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<<<<<<< HEAD
+=======
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+>>>>>>> 2c5be1d35ca6f9c529cf0709439849cf9d2ad3c8
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCox6FVrjOmNWgopbydRHoRTtCG_UbP-Ho&libraries=places&visualization">
     </script>
     <script>
+/* Takes user location */
     function setup() {
       initMap();
       initAutocomplete();
-      initialize();
-
     }
-
     $( document ).ready( setup );
 
-</script
+    $.ajax({
+        url: "https://www.inaturalist.org/observations.json",
+        type: "GET",
+        dataType: 'json',
+        cache: true,
+        success: function (data, status, error) {
+          console.log('success', data);
+        },
+        error: function (data, status, error) {
+          console.log('error', data, status, error);
+        }
+    });
+</script>
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 
+
   </head>
   <body>
+    <!-- This is the navigation pane -->
+
+    <ul id="NavigationBar" style= "list-style-type: none;">
+      <li><a href="/contact" style="padding-top: 27px; padding-bottom: 27px;">Contact</a></li>
+      <li><a href="/search" style="padding-top: 27px; padding-bottom: 27px;">Search</a></li>
+      <li><a href="/about" style="padding-top: 27px; padding-bottom: 27px;">About</a></li>
+      <li style="float:left;"><a class="active" href="/"><img style="width: 65px; height 65px;" id="WildViewlogo.jpg" src="static/WildViewlogo.jpg"></a></li>
+
+    </ul>
+    <!-- End of navigation pane -->
+
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="inaturalistresults">
+      <script
+        src="https://www.inaturalist.org/observations.widget"></script>
+        <script
+          src="https://www.inaturalist.org/observations.widget"></script>
+    </div>
     <div id="map"></div>
+
+
   </body>
 </html>

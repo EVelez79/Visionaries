@@ -1,10 +1,27 @@
 html, body {
+        overflow: hidden;
        height: 100%;
        margin: 0;
        padding: 0;
      }
+<<<<<<< HEAD
      #map {
+=======
+     div#map {
+>>>>>>> 2c5be1d35ca6f9c529cf0709439849cf9d2ad3c8
        height: 100%;
+       bottom: 0%;
+       width: 60%;
+       float: right;
+     }
+
+     div#inaturalistresults {
+       height: 85%;
+       overflow: scroll;
+       bottom: 0%;
+       width: 40%;
+       float: left;
+       font-family: "Poiret One";
      }
      .controls {
        margin-top: 10px;
@@ -19,7 +36,7 @@ html, body {
 
      #pac-input {
        background-color: #fff;
-       font-family: Roboto;
+       font-family: "Amatic SC";
        font-size: 15px;
        font-weight: 300;
        margin-left: 12px;
@@ -33,7 +50,7 @@ html, body {
      }
 
      .pac-container {
-       font-family: Roboto;
+       font-family: "Amatic SC";
      }
 
      #type-selector {
@@ -43,10 +60,61 @@ html, body {
      }
 
      #type-selector label {
-       font-family: Roboto;
+       font-family: "Amatic SC";
        font-size: 13px;
        font-weight: 300;
      }
      #target {
        width: 345px;
      }
+
+
+
+
+     /*Me trying to make a navigation bar */
+
+
+       ul#NavigationBar {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: black;
+
+
+       }
+
+       li {
+           float: right;
+
+       }
+
+       li a {
+           display: block;
+           color: white;
+           font-family: "Amatic SC", cursive;
+           font-size: 25px;
+           opacity: .4;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: underline;
+           text-decoration: none;
+     }
+
+
+       /* Make the link have a bottom border when hover */
+       li a:hover {
+
+           border-bottom: solid 1px rgba(255,255,255,.2);
+           color: #fff;
+           opacity: 1;
+           -webkit-transition: border-color 800ms ease-in-out;
+           -moz-transition: border-color 800ms ease-in-out;
+           -ms-transition: border-color 800ms ease-in-out;
+           -o-transition: border-color 800ms ease-in-out;
+           transition: border-color 800ms ease-in-out;
+
+       }
+
+
+/* End of navigation pane */

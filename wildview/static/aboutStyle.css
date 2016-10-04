@@ -2,40 +2,52 @@
 
 /*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
 /* CSS CLASSES FOR FORMATTING (start with a period) */
-<style>
 
 /*Me trying to make a navigation bar */
 
 
-  ul#NavigationBar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      opacity: .4;
-
-  }
+ul#NavigationBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
 
   li {
-      float: left;
+      float: right;
   }
 
   li a {
       display: block;
       color: white;
       font-family: "Amatic SC", cursive;
-      font-size: 30px;
+      font-size: 25px;
+      opacity: .7;
       text-align: center;
       padding: 14px 16px;
       text-decoration: underline;
       text-decoration: none;
 }
 
+li a #WildViewlogo.jpg {
+    display: block;
+    color: white;
+    font-family: "Amatic SC", cursive;
+    font-size: 25px;
+    opacity: 1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+    text-decoration: none;
+}
 
-  /* Make the link have a bottom border when hover */
+
+  /* Make the link have a bottom border when hovering */
   li a:hover {
       border-bottom: solid 1px rgba(255,255,255,.2);
+      opacity: 1;
+      color: #fff;
       -webkit-transition: border-color 800ms ease-in-out;
       -moz-transition: border-color 800ms ease-in-out;
       -ms-transition: border-color 800ms ease-in-out;
@@ -43,20 +55,55 @@
       transition: border-color 800ms ease-in-out;
 
   }
+  /* End of navigation pane */
 
   body {
 
-    background-color: black;
+    background-color: white;
     background-size: 100% 100%;
     background-attachment:fixed;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 
-h1{
-font-family: "Amatic SC", cursive;
-font-size: 60px;
-color: white;
-}
+     h1{
+     font-family: "Amatic SC", cursive;
+     font-size: 60px;
+     color: black;
+     }
+
+     img#teampicture {
+       padding-top: 0px;
+       padding-left: 15px;
+       padding-right: 15px;
+       width: 35%;
+       height: 35%;
+     }
 
 
-</style>
+/*     img#pawprints {
+       float: left;
+       padding: 25px;
+       width: 50px;
+       height: 50px;
+     }
+*/
+
+
+     div#AboutTextBox {
+       font-family: "Poiret One";
+       color: black;
+       letter-spacing:1px;
+       font-size: 15px;
+       float: right;
+       padding-left: 10%;
+       width: 60%;
+       border: 1px solid rgb(255, 255, 255);
+       border: 1px solid rgba(255, 255, 255, .5);
+       -webkit-background-clip: padding-box; /* for Safari */
+       background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */       padding: 25px;
+       margin: 25px;
+     }

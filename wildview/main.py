@@ -39,9 +39,20 @@ class SearchHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('search.html')
         self.response.out.write(template.render())
+        
+class UpdatesHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('updates.html')
+        self.response.out.write(template.render())
+class ContactHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('contact.html')
+        self.response.out.write(template.render())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/about', AboutHandler),
     ('/search', SearchHandler),
+    ('/updates', UpdatesHandler),
+    ('/contact', ContactHandler),
 ], debug=True)
